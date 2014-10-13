@@ -11,4 +11,5 @@ spec_files:
   - "**/*Spec.js"
 
 helpers:
-  - "**/*Helper.js"
+  - "**/helpers/jquery*.js"
+  - "**/helpers/*.js"
