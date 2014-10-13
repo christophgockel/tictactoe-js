@@ -16,14 +16,9 @@ var API = (function() {
       dataType: "json",
       async: false,
     })
-    .then(
-      function(data, status, xhr) {
-        returnData = data;
-        callback(returnData);
-      },
-      function(xhr, status, error) {
-        console.log(status, error);
-      });
+    .then( function(data, status, xhr) {
+      callback(data);
+    });
   };
 
   constructor.prototype.play = function(move, successCallback, errorCallback) {
