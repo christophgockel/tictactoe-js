@@ -13,3 +13,4 @@ spec_files:
 helpers:
   - "**/helpers/jquery*.js"
   - "**/helpers/*.js"
+  - "FakeAPI.js"

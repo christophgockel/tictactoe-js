@@ -66,17 +66,18 @@ describe("TicTacToe", function() {
       expect(api.newGame).toHaveBeenCalledWith("3x3", "human_human", jasmine.any(Function));
     });
 
-    xit("creates the initial grid", function() {
+    it("creates the initial grid", function() {
       var table = affix("table");
-      var t = new TicTacToe(api, $(table));
+      var t = new TicTacToe(new FakeAPI(), $(table));
+
       t.createNewGame("3x3", "human_human");
 
-      expect(table.html()).toEqual(3);
+      expect(table.find("tr").length).toEqual(3);
     });
 
-    xit("resets the status content", function() {
+    it("resets the status content", function() {
       $(statusFixture).text("some text");
-      var tictactoe = new TicTacToe(api, gridFixture, statusFixture);
+      var tictactoe = new TicTacToe(new FakeAPI(), gridFixture, statusFixture);
       tictactoe.createNewGame("3x3", "human_human");
 
       expect(statusFixture.html()).not.toEqual("some text");
