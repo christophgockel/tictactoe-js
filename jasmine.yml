@@ -1,0 +1,14 @@
+src_dir:
+  - "src/"
+
+src_files:
+  - "**/*.js"
+
+spec_dir:
+  - "spec/"
+
+spec_files:
+  - "**/*Spec.js"
+
+helpers:
+  - "**/*Helper.js"

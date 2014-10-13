@@ -1,0 +1,22 @@
+{
+  "name": "tictactoe-js",
+  "version": "0.0.1",
+  "authors": [
+    "Christoph Gockel <github@christophgockel.de>"
+  ],
+  "description": "AJAX powered JavaScript interface for Tic Tac Toe",
+  "main": "dist/tictactoe.js",
+  "homepage": "https://github.com/christophgockel/tictactoe-js",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower.json",
+    "node_modules",
+    "bower_components",
+    "src",
+    "spec"
+  ],
+  "dependencies": {
+    "jquery": ">=2.1.1"
+  }
+}
